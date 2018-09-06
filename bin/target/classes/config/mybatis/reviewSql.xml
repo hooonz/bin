@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</update>
 	
 	<select id="review_select"  resultType="com.bin.bin.review.reviewDTO">
-		select rownum,r.* from review r
+		select rownum rn,r.* from review r
 	</select>
 </mapper>
 
