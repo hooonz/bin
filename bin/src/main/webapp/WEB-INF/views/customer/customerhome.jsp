@@ -15,7 +15,7 @@ function button1_click() {
 <input type="button" id="button2" onclick="button2_click();" value="btn2" />
 	<script>
 	function button1_click() {
-		alert("버튼1을 누르셨습니다.");
+		alert("버튼1을 누르셨습f니다.");
 	}
 	<input type="button" id="button3" onclick="button3_click();" value="btn3" />
 		<script>
