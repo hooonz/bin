@@ -8,12 +8,14 @@
 	   <typeAlias alias="dto" type="com.bin.bin.review.reviewDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.review.review_replyDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.business.business_adDTO"/>
+	   <typeAlias alias="dto" type="com.bin.bin.join.joinDTO"/>
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="config/mybatis/reviewSql.xml"/>
+		<mapper resource="config/mybatis/reviewSQL.xml"/>
 		<mapper resource="config/mybatis/review_replySQL.xml"/>
 		<mapper resource="config/mybatis/business_adSQL.xml"/>
+		<mapper resource="config/mybatis/joinSQL.xml"/>
 	</mappers>
 	
 </configuration>
