@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-5package com.bin.bin.review;
-=======
+
 package com.bin.bin.review;
->>>>>>> branch 'master' of https://github.com/hooonz/bin.git
+
+
+
 
 public class review_replyDTO {
 	private int reply_num;

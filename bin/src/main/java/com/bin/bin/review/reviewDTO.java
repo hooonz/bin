@@ -1,7 +1,6 @@
 package com.bin.bin.review;
 
 public class reviewDTO {
-<<<<<<< HEAD
 
 	private int review_num;
 	private String review_title;
@@ -23,7 +22,7 @@ public class reviewDTO {
 	public String getBusinessId() {return businessId;}
 	public void setBusinessId(String businessId) {this.businessId = businessId;}
 
-=======
+
 	private int review_num;
 	private String review_title;
 	private String review_content;
@@ -43,5 +42,5 @@ public class reviewDTO {
 	public void setUserId(String userId) {this.userId = userId;}
 	public String getBusinessId() {return businessId;}
 	public void setBusinessId(String businessId) {this.businessId = businessId;}
->>>>>>> branch 'master' of https://github.com/hooonz/bin.git
+
 }
