@@ -5,9 +5,11 @@
 	<typeAliases>
 	   <typeAlias alias="dto" type="com.bin.bin.chat.chatDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.review.reviewDTO"/>
+	   <typeAlias alias="dto" type="com.bin.bin.review.review_replyDTO"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="config/mybatis/reviewSql.xml"/>
+		<mapper resource="config/mybatis/review_replySql.xml"/>
 	</mappers>
 </configuration>
