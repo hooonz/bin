@@ -1,6 +1,7 @@
 package com.bin.bin.review;
 
 public class reviewDTO {
+
 	private int review_num;
 	private String review_title;
 	private String review_content;
@@ -21,3 +22,5 @@ public class reviewDTO {
 	public String getBusinessId() {return businessId;}
 	public void setBusinessId(String businessId) {this.businessId = businessId;}
 }
+
+

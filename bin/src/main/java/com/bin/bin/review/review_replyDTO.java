@@ -1,4 +1,8 @@
+
 package com.bin.bin.review;
+
+
+
 
 public class review_replyDTO {
 	private int reply_num;

@@ -1,6 +1,5 @@
 package com.bin.bin.chat;
 
-public class chatDTO {
-	
+public class chatDAO {
 
 }
