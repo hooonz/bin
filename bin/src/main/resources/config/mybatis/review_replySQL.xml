@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review_replySQL">
+
+	<insert id="review_reply_add">
+		insert into review_reply(replyContent,replyDate,Review_reviewNum,Business_businessId,User_userId) 
+		values(#{reply_content},sysdate,#{review_num},#{businessId},#{userId})
+	</insert>
+
+	<delete id="review_reply_remove">
+		delete from review_reply where replyNum=#{reply_num}
+	</delete>
+	
+	<select id="review_reply_select" resultType="com.bin.bin.review.review_replyDTO">
+		select * from review_reply
+	</select>
+	
+</mapper>
