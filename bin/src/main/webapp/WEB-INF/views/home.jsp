@@ -67,7 +67,7 @@
                 <i class="icon-screen-desktop m-auto text-primary"></i>
               </div>
               <h3>category1</h3>
-              <p class="lead mb-0">category1</p>
+              <p class="lead mb-0">category11</p>
             </div>
           </div>
           <div class="col-lg-4">
