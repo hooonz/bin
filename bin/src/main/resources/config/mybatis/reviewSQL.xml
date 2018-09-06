@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="reviewSql">
+<mapper namespace="reviewSQL">
 
 	<insert id="review_add" parameterType="com.bin.bin.review.reviewDTO">
 		insert into review(reviewTitle,reviewContent,reviewDate,reviewImage,User_userId,Business_businessId)
@@ -20,6 +20,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<select id="review_select"  resultType="com.bin.bin.review.reviewDTO">
 		select rownum rn,r.* from review r
+	</select>
+	
+	<select id="review_detail" parameterType="int" resultType="com.bin.bin.review.reviewDTO">
+		select * from review where reviewNum=#{review_num}	
 	</select>
 	
 </mapper>

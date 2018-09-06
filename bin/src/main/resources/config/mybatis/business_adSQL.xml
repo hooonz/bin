@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="business_adSQL">
+	
+	<insert id="business_add" parameterType="com.bin.bin.business.business_adDTO">
+		insert into 
+		business_ad(business_adLocation,business_adContent,business_adHomepage,business_adPhonenumber,business_adImage,Business_businessId)
+		values(#{business_location},#{business_content},#{business_homepage},#{business_phonenumber},#{business_image},#{businessId})
+	</insert>
+	
+	<delete id="business_remove" parameterType="int">
+		delete from business_ad where business_adNum=#{business_num}
+	</delete>
+	
+	<update id="business_renew" parameterType="com.bin.bin.business.business_adDTO">
+		update business_ad set 
+		business_adLocation=#{business_location},business_adContent=#{business_content},business_adHomepage=#{business_homepage},business_adPhonenumber=#{business_phonenumber},business_adImage=#{business_image} 
+		where business_adNum=#{business_num}
+	</update>
+	
+	<select id="business_select">
+		select * from business_ad
+	</select>
+	
+	<select id="business_detail" parameterType="int" resultType="com.bin.bin.business.business_adDTO">
+		select * from business_ad where business_adNum=#{business_num}
+	</select>
+	
+</mapper>

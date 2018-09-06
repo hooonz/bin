@@ -7,11 +7,13 @@
 	   <typeAlias alias="dto" type="com.bin.bin.chat.chatDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.review.reviewDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.review.review_replyDTO"/>
+	   <typeAlias alias="dto" type="com.bin.bin.business.business_adDTO"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="config/mybatis/reviewSql.xml"/>
-		<mapper resource="config/mybatis/review_replySql.xml"/>
+		<mapper resource="config/mybatis/review_replySQL.xml"/>
+		<mapper resource="config/mybatis/business_adSQL.xml"/>
 	</mappers>
 	
 </configuration>
