@@ -1,4 +1,4 @@
-package com.bin.bin.chat;
+package com.bin.bin.review;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class chatController {
+public class review_replyController {
+
 	@Autowired
-	chatDAO dao;
+	review_replyDAO dao;
 	
-	@RequestMapping("/chatView.do")
-	static ModelAndView chatView() {
+	@RequestMapping ("/review_replyView.do")
+	static ModelAndView review_replyView() {
 		ModelAndView mav=new ModelAndView();
 		return mav;
 	}
-	
 }
