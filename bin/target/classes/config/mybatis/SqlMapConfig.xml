@@ -2,6 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
 	<typeAliases>
 	   <typeAlias alias="dto" type="com.bin.bin.chat.chatDTO"/>
 	   <typeAlias alias="dto" type="com.bin.bin.review.reviewDTO"/>
@@ -12,4 +13,5 @@
 		<mapper resource="config/mybatis/reviewSql.xml"/>
 		<mapper resource="config/mybatis/review_replySql.xml"/>
 	</mappers>
+	
 </configuration>
