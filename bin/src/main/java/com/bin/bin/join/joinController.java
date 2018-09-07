@@ -10,6 +10,7 @@ public class joinController {
 
 	@Autowired
 	joinDAO dao;
+	
 	@RequestMapping("/joinView.do")
 	static ModelAndView joinView() {
 		ModelAndView mav=new ModelAndView();
